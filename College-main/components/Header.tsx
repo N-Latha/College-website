@@ -5,10 +5,13 @@ import { Link, useLocation } from 'react-router-dom';
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/#about" },
+  { label: "About Us", href: "/#about" },
+  { label: "Academics", href: "/#academics" },
   { label: "Departments", href: "/departments" },
   { label: "Admissions", href: "/admissions" },
+  { label: "Research & Placement", href: "/#research-placement" },
   { label: "Campus Life", href: "/#campus-life" },
+  { label: "News & Events", href: "/#news-events" },
   { label: "Contact", href: "/#contact" }
 ];
 
@@ -20,15 +23,15 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     const path = location.pathname;
-    if (path === '/') setActive("Home");
-    else if (path.startsWith('/department')) setActive("Departments");
+    if (path === '/') return;
+    if (path.startsWith('/department')) setActive("Departments");
     else if (path === '/admissions') setActive("Admissions");
     // Add logic for others based on hash if needed
   }, [location]);
 
   return (
     <>
-      <header className={`w-full sticky top-0 z-50 transition-all duration-300 bg-white border-b border-gray-100 shadow-sm`}>
+      <header className="w-full sticky top-0 z-50 transition-all duration-300 bg-white border-b border-gray-100/80 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
         {/* 1️⃣ Top Bar (Information Bar) */}
         <div className="bg-secondary-900 text-white text-xs py-2 px-4 md:px-12 flex flex-col md:flex-row justify-between items-center relative">
           <div className="flex gap-6 items-center flex-wrap justify-center mb-2 md:mb-0">
@@ -158,7 +161,7 @@ const Header: React.FC = () => {
                 )
               })}
               <div className="pl-4 border-l border-gray-200">
-                <Link to="/admissions" className="bg-secondary-900 text-white px-6 py-2.5 rounded-full hover:bg-primary-500 transition-colors uppercase tracking-widest text-xs font-bold flex items-center gap-2 shadow-md hover:shadow-lg">
+                <Link to="/admissions" className="bg-secondary-900 text-white px-6 py-2.5 rounded-full hover:bg-primary-500 transition-all duration-300 uppercase tracking-widest text-xs font-bold flex items-center gap-2 shadow-md hover:shadow-lg hover:-translate-y-0.5">
                   Apply <ArrowRight size={14} />
                 </Link>
               </div>

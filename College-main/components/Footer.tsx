@@ -4,7 +4,7 @@ import { Facebook, Instagram, Youtube, Mail, Phone, MapPin, ArrowRight } from 'l
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary-950 text-white border-t border-white/10 pt-20 pb-10">
+    <footer id="contact" className="bg-secondary-950 text-white border-t border-white/10 pt-20 pb-10">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
 
@@ -39,14 +39,40 @@ const Footer = () => {
                <span className="absolute -bottom-2 left-0 w-1/2 h-0.5 bg-primary-500"></span>
             </h4>
             <ul className="space-y-4 text-secondary-300 text-sm font-bold tracking-wide mt-4">
-              {['Home', 'Departments', 'Admissions', 'Contact'].map((item) => (
-                <li key={item}>
-                  <Link to={item === 'Home' ? '/' : `/${item.toLowerCase()}`} className="hover:text-primary-500 transition-colors flex items-center gap-2 group">
+              {[
+                { label: 'Home', to: '/' },
+                { label: 'Departments', to: '/departments' },
+                { label: 'Admissions', to: '/admissions' },
+                { label: 'Placements', to: '/placements' },
+                { label: 'News & Events', to: '/#news-events' }
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link to={item.to} className="hover:text-primary-500 transition-colors flex items-center gap-2 group">
                     <ArrowRight size={12} className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all text-primary-500" />
-                    {item}
+                    {item.label}
                   </Link>
                 </li>
               ))}
+            </ul>
+            <h5 className="mt-8 text-[11px] font-bold uppercase tracking-widest text-secondary-400">
+               Mandatory Disclosures
+            </h5>
+            <ul className="mt-3 space-y-2 text-secondary-400 text-xs font-semibold">
+               <li>
+                  <a href="#" className="hover:text-primary-500 transition-colors">
+                     RTI
+                  </a>
+               </li>
+               <li>
+                  <a href="#" className="hover:text-primary-500 transition-colors">
+                     Anti-Ragging Committee
+                  </a>
+               </li>
+               <li>
+                  <a href="#" className="hover:text-primary-500 transition-colors">
+                     Grievance Redressal Cell
+                  </a>
+               </li>
             </ul>
           </div>
 
@@ -79,7 +105,7 @@ const Footer = () => {
                 { icon: Instagram, label: 'Instagram' }, 
                 { icon: Youtube, label: 'YouTube' }
               ].map(({ icon: Icon, label }, i) => (
-                <a key={i} href="#" aria-label={label} className="w-10 h-10 rounded-full bg-secondary-900 border border-secondary-800 flex items-center justify-center text-secondary-400 hover:bg-primary-500 hover:text-white hover:border-primary-500 transition-all shadow-lg hover:-translate-y-1">
+                <a key={i} href="#" aria-label={label} className="w-10 h-10 rounded-full bg-secondary-900 border border-secondary-800 flex items-center justify-center text-secondary-400 hover:bg-primary-500 hover:text-white hover:border-primary-500 transition-all duration-300 shadow-lg hover:-translate-y-0.5">
                   <Icon size={18} />
                 </a>
               ))}

@@ -195,9 +195,84 @@ export const departmentsData = [
         contact: {
             email: 'cse@srit.ac.in',
             phone: '+91 98765 43210',
+<<<<<<< HEAD
             location: 'CSE Block, SRIT Campus',
             mapEmbedUrl: 'https://www.google.com/maps?q=Srinivasa+Ramanujan+Institute+of+Technology&output=embed'
         }
+=======
+            location: 'CSE Block, SRIT Campus'
+        },
+        // 1. About the Department
+        aboutDepartment: {
+            history: 'The Department of Computer Science and Engineering was established in 2008 with a mission to deliver world-class education in computing. Over the years we have grown into a leading center for AI, software engineering, and cybersecurity.',
+            significance: 'CSE is at the heart of digital transformation across industries. Our graduates drive innovation in IT services, product companies, startups, and research organizations worldwide.'
+        },
+        visionMission: {
+            vision: 'To be a globally recognized department in computer science education and research, nurturing innovators who shape the future of technology.',
+            mission: 'To impart quality technical education through outcome-based learning, industry collaboration, and research, producing socially responsible engineers.'
+        },
+        advisoryBoard: [
+            { name: 'Mr. Rajesh Kumar', role: 'Industry Advisor', affiliation: 'Tech Mahindra', photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200' },
+            { name: 'Dr. Smita Nair', role: 'Academic Advisor', affiliation: 'IIT Hyderabad', photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200' },
+            { name: 'Ms. Priya Sharma', role: 'Industry Advisor', affiliation: 'Infosys Labs', photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200' }
+        ],
+        // 2. Academics & Curriculum
+        syllabus: 'Semester-wise breakdown includes Engineering Mathematics, Programming in C, Data Structures, Algorithms, DBMS, Computer Networks, AI/ML, and electives in Cloud, Cyber Security, and IoT. Total credits: 160 for B.Tech.',
+        academicCalendar: [
+            { event: 'Semester begins', date: 'Jul 15' },
+            { event: 'Mid-term examinations', date: 'Sep 10–20' },
+            { event: 'Industrial visit / Hackathon', date: 'Oct' },
+            { event: 'End-semester examinations', date: 'Nov 20 – Dec 10' }
+        ],
+        regulations: 'Grading: 10-point scale. Minimum 75% attendance required. CGPA ≥ 5.0 for pass. Details in JNTUH / AICTE norms and department handbook.',
+        // 3. Faculty & Research
+        researchDevelopment: {
+            description: 'Active R&D in AI/ML, cybersecurity, and distributed systems with funded projects from DST and industry.',
+            projects: ['Smart City IoT Platform', 'Secure Voting System', 'Healthcare Analytics'],
+            patents: ['Patent on Anomaly Detection in Networks', 'Patent on Low-power Edge AI'],
+            centers: ['Center for AI & Data Science', 'Cyber Security Research Lab']
+        },
+        publications: [
+            { title: 'Deep Learning for NLP', journal: 'IEEE Access', year: '2025' },
+            { title: 'Secure Cloud Architecture', journal: 'Springer CCIS', year: '2024' }
+        ],
+        // 4. Infrastructure (lab details extend laboratories)
+        labDetails: [
+            { name: 'Programming Lab', equipment: 'High-end PCs, Linux/Windows, IDEs', img: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600' },
+            { name: 'AI & ML Lab', equipment: 'GPU servers, TensorFlow, PyTorch', img: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=600' },
+            { name: 'Cyber Security Lab', equipment: 'Kali Linux, Wireshark, simulation tools', img: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600' }
+        ],
+        departmentalLibrary: 'Department library holds 2000+ titles in computer science, 50+ print journals, and access to ACM, IEEE Xplore, and Springer.',
+        libraryBooks: [
+            'https://images.unsplash.com/photo-1512820790803-83ca750daa84?q=80&w=400',
+            'https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=400',
+            'https://images.unsplash.com/photo-1589998059171-988d314df74f?q=80&w=400',
+            'https://images.unsplash.com/photo-1497633762265-9d179a989aa8?q=80&w=400'
+        ],
+        alumniImage: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800',
+        specializedCenters: ['AI & Robotics Research Center', 'Industry Incubation Cell', 'Center of Excellence in Cloud'],
+        // 5. Student Life & Placements
+        placementRecords: {
+            highestPackage: '25 LPA',
+            averagePackage: '6.5 LPA',
+            topRecruiters: ['Microsoft', 'Amazon', 'TCS', 'Infosys', 'Wipro', 'Accenture']
+        },
+        studentClubs: ['IEEE Student Branch', 'ACM Chapter', 'CSI Chapter', 'Coding Club', 'Robotics Club'],
+        workshopsEvents: [
+            { title: 'Guest Lecture: AI in Industry', date: 'Oct 2025' },
+            { title: 'National Hackathon', date: 'Nov 2025' },
+            { title: 'Industrial Visit – Tech Park', date: 'Dec 2025' }
+        ],
+        alumni: [
+            { name: 'Rahul Sharma', role: 'Software Engineer', company: 'Microsoft', photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300', quote: 'SRIT CSE gave me the foundation to crack top product companies. The labs and faculty mentorship were invaluable.' },
+            { name: 'Priya Reddy', role: 'Data Scientist', company: 'Amazon', photo: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300', quote: 'The AI/ML curriculum and project exposure prepared me for real-world data challenges.' },
+            { name: 'Arjun Kumar', role: 'Tech Lead', company: 'Google', photo: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=300', quote: 'From coding clubs to hackathons, SRIT shaped my problem-solving mindset. Forever grateful.' },
+            { name: 'Sneha Patel', role: 'Product Manager', company: 'Flipkart', photo: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=300', quote: 'The industry connect and placement support at SRIT opened doors I never imagined.' },
+            { name: 'Vikram Singh', role: 'Cybersecurity Analyst', company: 'TCS', photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300', quote: 'Cyber Security Lab and faculty guidance helped me specialize in a niche that\'s in high demand.' },
+            { name: 'Ananya Gupta', role: 'ML Engineer', company: 'Infosys', photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300', quote: 'SRIT\'s research culture and IEEE chapter sparked my interest in machine learning early on.' }
+        ],
+        alumniNetwork: 'Our alumni network spans 5000+ professionals. Connect via LinkedIn group "SRIT CSE Alumni" and annual alumni meet.'
+>>>>>>> 06838854b3c78e120c06f5b608ecb80172f3f0d2
     },
     {
         id: 'ece',
@@ -295,9 +370,74 @@ export const departmentsData = [
         contact: {
             email: 'ece@srit.ac.in',
             phone: '+91 98765 43211',
+<<<<<<< HEAD
             location: 'ECE Block, SRIT Campus',
             mapEmbedUrl: 'https://www.google.com/maps?q=Srinivasa+Ramanujan+Institute+of+Technology&output=embed'
         }
+=======
+            location: 'ECE Block, SRIT Campus'
+        },
+        aboutDepartment: {
+            history: 'The ECE department was established in 2008 to offer strong foundations in electronics, communications, and embedded systems. We have since built state-of-the-art labs and industry partnerships.',
+            significance: 'ECE drives innovation in wireless systems, IoT, VLSI, and signal processing. Our graduates excel in core electronics, semiconductor, and telecom sectors.'
+        },
+        visionMission: {
+            vision: 'To be a leading department in electronics and communication engineering, recognized for quality education and research in VLSI, IoT, and communications.',
+            mission: 'To provide industry-relevant curriculum, hands-on training, and research opportunities that produce employable and entrepreneurial engineers.'
+        },
+        advisoryBoard: [
+            { name: 'Dr. Amit Verma', role: 'Academic Advisor', affiliation: 'IIIT Hyderabad', photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200' },
+            { name: 'Mr. Suresh Reddy', role: 'Industry Advisor', affiliation: 'Qualcomm India', photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200' }
+        ],
+        syllabus: 'B.Tech ECE covers Analog & Digital Electronics, Signals & Systems, Communication Engineering, VLSI, Embedded Systems, and electives. Total 160 credits.',
+        academicCalendar: [
+            { event: 'Semester begins', date: 'Jul 15' },
+            { event: 'Mid-term examinations', date: 'Sep 10–20' },
+            { event: 'Workshop / Industry talk', date: 'Oct' },
+            { event: 'End-semester examinations', date: 'Nov 20 – Dec 10' }
+        ],
+        regulations: '10-point grading. 75% attendance mandatory. Department follows AICTE/JNTUH regulations.',
+        researchDevelopment: {
+            description: 'R&D in VLSI design, IoT, and signal processing with DST and industry funding.',
+            projects: ['Low-power IoT Node', '5G Prototype'],
+            patents: ['Patent on Energy-efficient RF front-end'],
+            centers: ['IoT Center of Excellence', 'VLSI Design Lab']
+        },
+        publications: [
+            { title: 'VLSI Design for IoT', journal: 'IEEE TVLSI', year: '2024' }
+        ],
+        labDetails: [
+            { name: 'VLSI Design Lab', equipment: 'Cadence, Xilinx FPGA kits', img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600' },
+            { name: 'Embedded Systems Lab', equipment: 'ARM boards, Raspberry Pi, sensors', img: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600' }
+        ],
+        departmentalLibrary: 'ECE library: 1500+ titles, IEEE journals, and e-resources.',
+        libraryBooks: [
+            'https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=400',
+            'https://images.unsplash.com/photo-1589998059171-988d314df74f?q=80&w=400',
+            'https://images.unsplash.com/photo-1512820790803-83ca750daa84?q=80&w=400',
+            'https://images.unsplash.com/photo-1507845267040-c6e22b9e28e8?q=80&w=400'
+        ],
+        alumni: [
+            { name: 'Karthik Rao', role: 'VLSI Design Engineer', company: 'Qualcomm', photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300', quote: 'ECE labs and Cadence training gave me the edge in VLSI. SRIT\'s industry tie-ups made all the difference.' },
+            { name: 'Divya Nair', role: 'Embedded Systems Engineer', company: 'Texas Instruments', photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300', quote: 'The IoT and embedded labs were world-class. I landed my dream job right after graduation.' },
+            { name: 'Manoj Kumar', role: 'RF Engineer', company: 'Intel', photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300', quote: 'From microwave lab to antenna testing—SRIT prepared me for core electronics roles.' },
+            { name: 'Lakshmi Reddy', role: 'Signal Processing Specialist', company: 'Wipro', photo: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=300', quote: 'DSP and communications courses were rigorous. The faculty pushed us to excel.' },
+            { name: 'Suresh Babu', role: 'IoT Solutions Architect', company: 'L&T', photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300', quote: 'IoT Center of Excellence at SRIT was my launchpad into smart systems and Industry 4.0.' },
+            { name: 'Meera Krishnan', role: 'Hardware Validation Engineer', company: 'Qualcomm', photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300', quote: 'Hands-on PCB prototyping and FPGA labs made me industry-ready from day one.' }
+        ],
+        specializedCenters: ['IoT CoE', 'Industry-Sponsored VLSI Lab'],
+        placementRecords: {
+            highestPackage: '18 LPA',
+            averagePackage: '5.5 LPA',
+            topRecruiters: ['Qualcomm', 'Texas Instruments', 'Intel', 'Wipro', 'L&T']
+        },
+        studentClubs: ['IEEE ECE Chapter', 'IoT Club', 'Robotics Club'],
+        workshopsEvents: [
+            { title: 'VLSI Workshop', date: 'Oct 2025' },
+            { title: 'Industrial Visit', date: 'Nov 2025' }
+        ],
+        alumniNetwork: 'SRIT ECE Alumni network – connect via annual meet and LinkedIn.'
+>>>>>>> 06838854b3c78e120c06f5b608ecb80172f3f0d2
     },
     {
         id: 'mech',
@@ -395,9 +535,74 @@ export const departmentsData = [
         contact: {
             email: 'mech@srit.ac.in',
             phone: '+91 98765 43212',
+<<<<<<< HEAD
             location: 'MECH Block, SRIT Campus',
             mapEmbedUrl: 'https://www.google.com/maps?q=Srinivasa+Ramanujan+Institute+of+Technology&output=embed'
         }
+=======
+            location: 'MECH Block, SRIT Campus'
+        },
+        aboutDepartment: {
+            history: 'Mechanical Engineering at SRIT started in 2008 with a focus on thermal, manufacturing, and design. We have evolved with robotics, automation, and industry 4.0 labs.',
+            significance: 'Mechanical engineers are essential in manufacturing, automotive, energy, and aerospace. Our department prepares students for core and interdisciplinary roles.'
+        },
+        visionMission: {
+            vision: 'To be a center of excellence in mechanical engineering education and research, with strong industry and research linkages.',
+            mission: 'To deliver outcome-based education, hands-on training in labs and workshops, and research in thermal, design, and automation.'
+        },
+        advisoryBoard: [
+            { name: 'Mr. Ravi Kumar', role: 'Industry Advisor', affiliation: 'Hyundai Motor', photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200' },
+            { name: 'Dr. Anitha Rao', role: 'Academic Advisor', affiliation: 'NIT Warangal', photo: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200' }
+        ],
+        syllabus: 'B.Tech Mechanical: Thermodynamics, Fluid Mechanics, Machine Design, CAD/CAM, Robotics, and electives. 160 credits.',
+        academicCalendar: [
+            { event: 'Semester begins', date: 'Jul 15' },
+            { event: 'Mid-term examinations', date: 'Sep 10–20' },
+            { event: 'BAJA / Design event', date: 'Oct' },
+            { event: 'End-semester examinations', date: 'Nov 20 – Dec 10' }
+        ],
+        regulations: '10-point grading. 75% attendance. AICTE/JNTUH norms applicable.',
+        researchDevelopment: {
+            description: 'Research in thermal systems, composite materials, and robotics with industry collaboration.',
+            projects: ['Solar Vehicle', 'Industrial Robot'],
+            patents: ['Patent on Heat Exchanger Design'],
+            centers: ['Robotics Lab', 'Advanced Manufacturing Center']
+        },
+        publications: [
+            { title: 'Thermal Analysis of Hybrid Systems', journal: 'Applied Thermal Engg', year: '2024' }
+        ],
+        labDetails: [
+            { name: 'Thermal Engineering Lab', equipment: 'Heat exchanger, refrigeration test rigs', img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600' },
+            { name: 'CAD/CAM & CNC Lab', equipment: 'CNC machines, CAD software', img: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=600' }
+        ],
+        departmentalLibrary: 'MECH library: 1800+ titles, ASME and Springer access.',
+        libraryBooks: [
+            'https://images.unsplash.com/photo-1589998059171-988d314df74f?q=80&w=400',
+            'https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=400',
+            'https://images.unsplash.com/photo-1497633762265-9d179a989aa8?q=80&w=400',
+            'https://images.unsplash.com/photo-1512820790803-83ca750daa84?q=80&w=400'
+        ],
+        alumni: [
+            { name: 'Rajesh Kumar', role: 'Design Engineer', company: 'Tata Motors', photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300', quote: 'CAD/CAM and CNC labs at SRIT gave me the skills to design and manufacture. BAJA SAE was a game-changer.' },
+            { name: 'Pooja Sharma', role: 'Thermal Engineer', company: 'Mahindra', photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300', quote: 'Thermal engineering and heat transfer courses were top-notch. SRIT shaped my career in core mechanical.' },
+            { name: 'Sandeep Reddy', role: 'Robotics Engineer', company: 'L&T', photo: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=300', quote: 'The Robotics Lab and automation projects prepared me for Industry 4.0 roles.' },
+            { name: 'Kavitha Nair', role: 'Manufacturing Lead', company: 'Capgemini', photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300', quote: 'From workshop to 3D printing center—SRIT exposed me to the full manufacturing spectrum.' },
+            { name: 'Venkat Rao', role: 'Automotive Design Specialist', company: 'Hyundai', photo: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300', quote: 'Design competitions and industry visits at SRIT opened my eyes to real-world engineering.' },
+            { name: 'Anil Kumar', role: 'Maintenance Engineer', company: 'L&T', photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300', quote: 'Fluid mechanics and machinery labs built my foundation. SRIT alumni network helped me land here.' }
+        ],
+        specializedCenters: ['Robotics & Automation Lab', '3D Printing & Prototyping Center'],
+        placementRecords: {
+            highestPackage: '12 LPA',
+            averagePackage: '4.5 LPA',
+            topRecruiters: ['L&T', 'Tata Motors', 'Mahindra', 'Capgemini']
+        },
+        studentClubs: ['SAE Collegiate Club', 'Robotics Club', 'Innovation Club'],
+        workshopsEvents: [
+            { title: 'CAD/CAM Workshop', date: 'Oct 2025' },
+            { title: 'Industry Visit', date: 'Nov 2025' }
+        ],
+        alumniNetwork: 'SRIT Mechanical Alumni – annual meet and industry mentorship program.'
+>>>>>>> 06838854b3c78e120c06f5b608ecb80172f3f0d2
     },
     {
         id: 'civil',
@@ -495,8 +700,73 @@ export const departmentsData = [
         contact: {
             email: 'civil@srit.ac.in',
             phone: '+91 98765 43213',
+<<<<<<< HEAD
             location: 'CIVIL Block, SRIT Campus',
             mapEmbedUrl: 'https://www.google.com/maps?q=Srinivasa+Ramanujan+Institute+of+Technology&output=embed'
         }
+=======
+            location: 'CIVIL Block, SRIT Campus'
+        },
+        aboutDepartment: {
+            history: 'The Civil Engineering department was established in 2008 to train engineers for infrastructure, construction, and sustainable development. We have strong ties with PWD and construction firms.',
+            significance: 'Civil engineers build the nation’s infrastructure. Our graduates work in construction, consulting, government, and smart city projects.'
+        },
+        visionMission: {
+            vision: 'To be a leading department in civil engineering education and research, contributing to sustainable and smart infrastructure.',
+            mission: 'To provide quality education in structural, environmental, and transportation engineering with field exposure and industry projects.'
+        },
+        advisoryBoard: [
+            { name: 'Er. Venkat Rao', role: 'Industry Advisor', affiliation: 'L&T Construction', photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200' },
+            { name: 'Dr. Kavitha M', role: 'Academic Advisor', affiliation: 'JNTUH', photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200' }
+        ],
+        syllabus: 'B.Tech Civil: Structural Analysis, Concrete Technology, Geotechnical, Environmental, Transportation Engineering, and electives. 160 credits.',
+        academicCalendar: [
+            { event: 'Semester begins', date: 'Jul 15' },
+            { event: 'Mid-term examinations', date: 'Sep 10–20' },
+            { event: 'Site visit / Survey camp', date: 'Oct' },
+            { event: 'End-semester examinations', date: 'Nov 20 – Dec 10' }
+        ],
+        regulations: '10-point grading. 75% attendance. AICTE/JNTUH regulations.',
+        researchDevelopment: {
+            description: 'Research in sustainable materials, structural health, and water resources.',
+            projects: ['Eco-friendly Materials', 'Traffic Management'],
+            patents: ['Patent on Green Concrete'],
+            centers: ['Material Testing Lab', 'Smart City Planning Cell']
+        },
+        publications: [
+            { title: 'Sustainable Concrete', journal: 'Construction & Building Materials', year: '2024' }
+        ],
+        labDetails: [
+            { name: 'Concrete Technology Lab', equipment: 'Compression testing, mix design', img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=600' },
+            { name: 'Survey Lab', equipment: 'Total station, GPS, drones', img: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600' }
+        ],
+        departmentalLibrary: 'Civil library: 2000+ titles, ASCE and ICE journals.',
+        libraryBooks: [
+            'https://images.unsplash.com/photo-1507845267040-c6e22b9e28e8?q=80&w=400',
+            'https://images.unsplash.com/photo-1589998059171-988d314df74f?q=80&w=400',
+            'https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=400',
+            'https://images.unsplash.com/photo-1512820790803-83ca750daa84?q=80&w=400'
+        ],
+        alumni: [
+            { name: 'Srinivas Reddy', role: 'Site Engineer', company: 'L&T Construction', photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300', quote: 'Survey camp and site visits at SRIT were invaluable. I use those skills every day on mega projects.' },
+            { name: 'Lakshmi Devi', role: 'Structural Design Engineer', company: 'IRCON', photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300', quote: 'Concrete tech and structural analysis labs built my core. SRIT\'s BAI chapter connected me to industry.' },
+            { name: 'Ramesh Kumar', role: 'Project Manager', company: 'NPCIL', photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300', quote: 'From geotech to environmental—SRIT gave me a holistic view of civil engineering.' },
+            { name: 'Swathi Rao', role: 'Transportation Planner', company: 'State PWD', photo: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=300', quote: 'Transportation and smart city electives shaped my career in urban planning.' },
+            { name: 'Venugopal N', role: 'Quality Control Engineer', company: 'L&T', photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300', quote: 'Material testing lab and quality focus at SRIT prepared me for construction QA/QC roles.' },
+            { name: 'Geetha M', role: 'Environmental Consultant', company: 'Consulting Firm', photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300', quote: 'Environmental engineering and water quality labs sparked my interest in sustainability.' }
+        ],
+        specializedCenters: ['Material Testing Hub', 'Water Quality Lab', 'Digital Twin Lab'],
+        placementRecords: {
+            highestPackage: '10 LPA',
+            averagePackage: '4 LPA',
+            topRecruiters: ['L&T', 'IRCON', 'NPCIL', 'State PWD']
+        },
+        studentClubs: ['BAI Student Chapter', 'Green Building Club', 'Survey Club'],
+        workshopsEvents: [
+            { title: 'Structural Design Workshop', date: 'Oct 2025' },
+            { title: 'Site Visit', date: 'Nov 2025' }
+        ],
+        alumniNetwork: 'SRIT Civil Alumni network – reconnect via annual meet and BAI events.'
+>>>>>>> 06838854b3c78e120c06f5b608ecb80172f3f0d2
     }
 ];

@@ -2,14 +2,25 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { departmentsData } from '../src/data/departmentsData';
-import { ArrowRight, BookOpen, Users } from 'lucide-react';
+import { ArrowRight, BookOpen, Users, ChevronRight } from 'lucide-react';
 
 const Departments: React.FC = () => {
     return (
         <div className="bg-white min-h-screen font-sans selection:bg-primary-500 selection:text-white pb-20">
 
-            {/* 1️⃣ Page Hero Banner */}
-            <section className="relative pt-40 pb-20 md:pt-48 md:pb-32 px-6 bg-secondary-950 text-center overflow-hidden">
+            {/* Breadcrumbs */}
+            <div className="bg-secondary-50 border-b border-gray-100 py-3">
+                <div className="container mx-auto px-4 md:px-12">
+                    <nav className="flex items-center gap-2 text-sm">
+                        <Link to="/" className="text-secondary-500 hover:text-primary-500 transition-colors font-medium">Home</Link>
+                        <ChevronRight size={14} className="text-secondary-400" />
+                        <span className="text-secondary-900 font-semibold">Departments</span>
+                    </nav>
+                </div>
+            </div>
+
+            {/* Page Hero Banner */}
+            <section className="relative pt-24 pb-20 md:pt-32 md:pb-28 px-6 bg-secondary-950 text-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img 
                         src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1600" 
@@ -45,9 +56,9 @@ const Departments: React.FC = () => {
                 </div>
             </section>
 
-            {/* 2️⃣ Departments Grid */}
-            <section className="container mx-auto px-4 md:px-12 relative z-20 -mt-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Departments Grid */}
+            <section className="container mx-auto px-4 md:px-12 relative z-20 -mt-12 py-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                     {departmentsData.map((dept, index) => (
                         <motion.div
                             key={dept.id}
@@ -55,13 +66,14 @@ const Departments: React.FC = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="bg-white rounded-3xl shadow-xl hover:shadow-2xl border border-gray-100 overflow-hidden flex flex-col group transition-all duration-300"
+                            className="bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_-12px_rgba(0,0,0,0.12)] border border-gray-100/80 overflow-hidden flex flex-col group transition-all duration-300"
                         >
                             <div className="h-64 relative overflow-hidden">
                                 <img 
                                     src={dept.cardImage} 
                                     alt={dept.name} 
-                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                                    loading="lazy"
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-secondary-950 via-secondary-900/40 to-transparent"></div>
                                 <div className={`absolute top-4 right-4 ${dept.theme} text-white px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest shadow-lg`}>
