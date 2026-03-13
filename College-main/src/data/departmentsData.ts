@@ -1,11 +1,112 @@
 export const departmentsData = [
     {
+        id: 'cse-aiml',
+        code: 'CSE (AI&ML)',
+        name: 'CSE (AI & ML, Data Science)',
+        theme: 'bg-indigo-500',
+        shortDesc: 'Dedicated to Artificial Intelligence, Machine Learning and Data Science with strong industry-focused curriculum.',
+        longDesc: 'The Department of CSE (AI & ML, Data Science) at SRIT focuses on cutting-edge technologies in Artificial Intelligence, Machine Learning, and Data Science. The program blends strong foundations in computer science with modern tools, platforms, and real-world problem solving, preparing students for research, product development, and data-driven decision making.',
+        vision: 'To emerge as a centre of excellence in Artificial Intelligence, Machine Learning and Data Science education and research, creating globally competent and socially responsible professionals.',
+        mission: 'To impart strong theoretical foundations and hands-on skills in AI, ML and Data Science; to promote innovation through industry collaborations and research; and to inculcate ethical values while solving real-world problems using intelligent systems.',
+        bannerImage: 'https://images.unsplash.com/photo-1534759846116-5799c33ce22a?q=80&w=1200',
+        cardImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600',
+        programs: [
+            'B.Tech in CSE (Artificial Intelligence & Machine Learning)',
+            'B.Tech in CSE (Data Science)',
+            'Honors / Minors in Deep Learning and Big Data Analytics'
+        ],
+        hod: {
+            name: 'Dr. P. Chitralingappa',
+            title: 'Associate Professor & Head',
+            qualification: 'Dept. of CSE (AI & ML, Data Science)',
+            message: 'We nurture AI engineers and data scientists who not only master algorithms and tools, but also apply them ethically to solve human-centric problems.',
+            photo: '/hod-cse-aiml.png'
+        },
+        laboratories: [
+            'AI & Machine Learning Lab',
+            'Data Science & Big Data Analytics Lab',
+            'Deep Learning and Computer Vision Lab',
+            'Cloud & DevOps Lab'
+        ],
+        faculty: [
+            { 
+                name: 'Dr. P. Chitralingappa', 
+                designation: 'Associate Professor & Head', 
+                qualification: 'Ph.D. in Computer Science (AI & ML)', 
+                email: 'hod.cseaiml@srit.ac.in',
+                research: 'Artificial Intelligence, Machine Learning, Data Science', 
+                photo: '/hod-cse-aiml.png' 
+            },
+            { 
+                name: 'Faculty Member 1', 
+                designation: 'Assistant Professor', 
+                qualification: 'M.Tech in Artificial Intelligence', 
+                email: 'faculty1.cseaiml@srit.ac.in',
+                research: 'Deep Learning, Computer Vision', 
+                photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300' 
+            },
+            { 
+                name: 'Faculty Member 2', 
+                designation: 'Assistant Professor', 
+                qualification: 'M.Tech in Data Science', 
+                email: 'faculty2.cseaiml@srit.ac.in',
+                research: 'Data Analytics, Cloud Computing', 
+                photo: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=300' 
+            },
+            { 
+                name: 'Faculty Member 3', 
+                designation: 'Assistant Professor', 
+                qualification: 'M.Tech in Computer Science', 
+                email: 'faculty3.cseaiml@srit.ac.in',
+                research: 'Natural Language Processing', 
+                photo: 'https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?q=80&w=300' 
+            }
+        ],
+        achievements: [
+            'Students working on funded AI and Data Science projects with industry partners',
+            'High success rate in GATE, CAT and global coding competitions from AI & ML cohorts',
+            'Student teams regularly publishing in reputed AI/ML conferences and journals',
+            'Hands-on exposure through hackathons, Kaggle-style contests and internship programs'
+        ],
+        stats: {
+            students: 600,
+            faculty: 35,
+            labs: 8,
+            placementRate: 92
+        },
+        facilities: [
+            'GPU-enabled High Performance Computing Lab',
+            'Dedicated AI & Data Science Innovation Center',
+            '24x7 Coding and Project Spaces',
+            'Industry-driven Curriculum with regular expert talks'
+        ],
+        projects: [
+            { title: 'Predictive Healthcare Analytics', category: 'Data Science', img: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=400' },
+            { title: 'Intelligent Traffic Surveillance using AI', category: 'AI & Vision', img: 'https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?q=80&w=400' },
+            { title: 'Personalized Learning Recommendation System', category: 'EdTech', img: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=400' }
+        ],
+        gallery: [
+            'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=600',
+            'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=600',
+            'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600',
+            'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600'
+        ],
+        contact: {
+            email: 'cseaiml@srit.ac.in',
+            phone: '+91 98765 43214',
+            location: 'CSE (AI & ML, DS) Block, SRIT Campus',
+            mapEmbedUrl: 'https://www.google.com/maps?q=Srinivasa+Ramanujan+Institute+of+Technology&output=embed'
+        }
+    },
+    {
         id: 'cse',
         code: 'CSE',
         name: 'Computer Science and Engineering',
         theme: 'bg-blue-500',
         shortDesc: 'Focuses on AI, ML, Software development and data science.',
         longDesc: 'The Department of Computer Science and Engineering focuses on modern computing technologies such as Artificial Intelligence, Cloud Computing, and Cyber Security. We prepare students for industry leadership through rigorous academics and practical innovation.',
+        vision: 'To be a leading Computer Science department recognized for academic excellence, research, and innovation in emerging technologies.',
+        mission: 'To provide strong foundations in computing, encourage innovation and entrepreneurship, and collaborate with industry to produce globally competent engineers with ethical values.',
         bannerImage: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200',
         cardImage: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600',
         programs: [
@@ -29,10 +130,38 @@ export const departmentsData = [
             'Cyber Security Lab'
         ],
         faculty: [
-            { name: 'Dr. Jane Smith', designation: 'Professor', research: 'Machine Learning, NLP', photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300' },
-            { name: 'Prof. Mark Davis', designation: 'Associate Professor', research: 'Cyber Security, Cryptography', photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300' },
-            { name: 'Dr. Emily Chen', designation: 'Assistant Professor', research: 'Cloud Computing, Distributed Systems', photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300' },
-            { name: 'Prof. Robert Wilson', designation: 'Assistant Professor', research: 'Software Engineering, Agile', photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300' }
+            { 
+                name: 'Dr. Jane Smith', 
+                designation: 'Professor', 
+                qualification: 'Ph.D. in Computer Science', 
+                email: 'jane.smith@srit.ac.in',
+                research: 'Machine Learning, NLP', 
+                photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300' 
+            },
+            { 
+                name: 'Prof. Mark Davis', 
+                designation: 'Associate Professor', 
+                qualification: 'M.Tech in Information Security', 
+                email: 'mark.davis@srit.ac.in',
+                research: 'Cyber Security, Cryptography', 
+                photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300' 
+            },
+            { 
+                name: 'Dr. Emily Chen', 
+                designation: 'Assistant Professor', 
+                qualification: 'Ph.D. in Computer Engineering', 
+                email: 'emily.chen@srit.ac.in',
+                research: 'Cloud Computing, Distributed Systems', 
+                photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300' 
+            },
+            { 
+                name: 'Prof. Robert Wilson', 
+                designation: 'Assistant Professor', 
+                qualification: 'M.Tech in Software Engineering', 
+                email: 'robert.wilson@srit.ac.in',
+                research: 'Software Engineering, Agile', 
+                photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300' 
+            }
         ],
         achievements: [
             '95% Placement Record in top MNCs',
@@ -66,7 +195,8 @@ export const departmentsData = [
         contact: {
             email: 'cse@srit.ac.in',
             phone: '+91 98765 43210',
-            location: 'CSE Block, SRIT Campus'
+            location: 'CSE Block, SRIT Campus',
+            mapEmbedUrl: 'https://www.google.com/maps?q=Srinivasa+Ramanujan+Institute+of+Technology&output=embed'
         }
     },
     {
@@ -76,6 +206,8 @@ export const departmentsData = [
         theme: 'bg-orange-500',
         shortDesc: 'VLSI, Communications, and Embedded Systems fostering hardware innovation.',
         longDesc: 'The Electronics and Communication Engineering department drives innovation in hardware, wireless technology, and embedded systems. We equip our students to shape the future of connectivity and smart devices.',
+        vision: 'To become a premier department in Electronics and Communication, producing competent engineers and researchers in contemporary technologies.',
+        mission: 'To provide quality education in ECE, promote research and development, and build strong industry collaborations to address real-world communication and embedded system challenges.',
         bannerImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200',
         cardImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600',
         programs: [
@@ -98,10 +230,38 @@ export const departmentsData = [
             'IoT Applications Lab'
         ],
         faculty: [
-            { name: 'Dr. Michael Chang', designation: 'Professor', research: 'RF and Microwave', photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300' },
-            { name: 'Prof. Sarah Lee', designation: 'Associate Professor', research: 'Digital Image Processing', photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300' },
-            { name: 'Dr. James White', designation: 'Assistant Professor', research: 'Embedded Systems', photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300' },
-            { name: 'Prof. Linda Brown', designation: 'Assistant Professor', research: 'VLSI Architectures', photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300' }
+            { 
+                name: 'Dr. Michael Chang', 
+                designation: 'Professor', 
+                qualification: 'Ph.D. in RF & Microwave Engineering', 
+                email: 'michael.chang@srit.ac.in',
+                research: 'RF and Microwave', 
+                photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300' 
+            },
+            { 
+                name: 'Prof. Sarah Lee', 
+                designation: 'Associate Professor', 
+                qualification: 'Ph.D. in Image Processing', 
+                email: 'sarah.lee@srit.ac.in',
+                research: 'Digital Image Processing', 
+                photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300' 
+            },
+            { 
+                name: 'Dr. James White', 
+                designation: 'Assistant Professor', 
+                qualification: 'Ph.D. in Embedded Systems', 
+                email: 'james.white@srit.ac.in',
+                research: 'Embedded Systems', 
+                photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300' 
+            },
+            { 
+                name: 'Prof. Linda Brown', 
+                designation: 'Assistant Professor', 
+                qualification: 'M.Tech in VLSI Design', 
+                email: 'linda.brown@srit.ac.in',
+                research: 'VLSI Architectures', 
+                photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300' 
+            }
         ],
         achievements: [
             '90% Placement Record in core hardware companies',
@@ -135,7 +295,8 @@ export const departmentsData = [
         contact: {
             email: 'ece@srit.ac.in',
             phone: '+91 98765 43211',
-            location: 'ECE Block, SRIT Campus'
+            location: 'ECE Block, SRIT Campus',
+            mapEmbedUrl: 'https://www.google.com/maps?q=Srinivasa+Ramanujan+Institute+of+Technology&output=embed'
         }
     },
     {
@@ -145,6 +306,8 @@ export const departmentsData = [
         theme: 'bg-slate-500',
         shortDesc: 'Advanced Robotics, Thermal Engineering, and Automotive Design.',
         longDesc: 'Mechanical Engineering at SRIT merges core engineering principles with modern computer-aided design, robotics, and sustainable manufacturing practices to create robust solutions to physical world problems.',
+        vision: 'To be a centre of excellence in Mechanical Engineering education, research and innovation for sustainable development.',
+        mission: 'To impart quality education in core and emerging areas of Mechanical Engineering, foster innovation through projects and industry interaction, and prepare graduates to contribute ethically to society.',
         bannerImage: 'https://images.unsplash.com/photo-1565063073994-0cf7fcd025ac?q=80&w=1200',
         cardImage: 'https://images.unsplash.com/photo-1565063073994-0cf7fcd025ac?q=80&w=600',
         programs: [
@@ -167,10 +330,38 @@ export const departmentsData = [
             'Material Testing Facility'
         ],
         faculty: [
-            { name: 'Dr. Kevin Harris', designation: 'Professor', research: 'Thermodynamics', photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300' },
-            { name: 'Prof. Nancy Green', designation: 'Associate Professor', research: 'Composite Materials', photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300' },
-            { name: 'Dr. Paul Robinson', designation: 'Assistant Professor', research: 'Robotics', photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300' },
-            { name: 'Prof. Mark Clark', designation: 'Assistant Professor', research: 'Automotive Design', photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300' }
+            { 
+                name: 'Dr. Kevin Harris', 
+                designation: 'Professor', 
+                qualification: 'Ph.D. in Thermal Engineering', 
+                email: 'kevin.harris@srit.ac.in',
+                research: 'Thermodynamics', 
+                photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300' 
+            },
+            { 
+                name: 'Prof. Nancy Green', 
+                designation: 'Associate Professor', 
+                qualification: 'M.Tech in Materials Engineering', 
+                email: 'nancy.green@srit.ac.in',
+                research: 'Composite Materials', 
+                photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300' 
+            },
+            { 
+                name: 'Dr. Paul Robinson', 
+                designation: 'Assistant Professor', 
+                qualification: 'Ph.D. in Robotics', 
+                email: 'paul.robinson@srit.ac.in',
+                research: 'Robotics', 
+                photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300' 
+            },
+            { 
+                name: 'Prof. Mark Clark', 
+                designation: 'Assistant Professor', 
+                qualification: 'M.Tech in Automotive Engineering', 
+                email: 'mark.clark@srit.ac.in',
+                research: 'Automotive Design', 
+                photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300' 
+            }
         ],
         achievements: [
             '85% Placement Record in top manufacturing firms',
@@ -204,7 +395,8 @@ export const departmentsData = [
         contact: {
             email: 'mech@srit.ac.in',
             phone: '+91 98765 43212',
-            location: 'MECH Block, SRIT Campus'
+            location: 'MECH Block, SRIT Campus',
+            mapEmbedUrl: 'https://www.google.com/maps?q=Srinivasa+Ramanujan+Institute+of+Technology&output=embed'
         }
     },
     {
@@ -214,6 +406,8 @@ export const departmentsData = [
         theme: 'bg-emerald-500',
         shortDesc: 'Sustainable Infrastructure, Smart Cities, and Structural Engineering.',
         longDesc: 'Civil Engineering forms the backbone of infrastructure. We teach the design, construction, and maintenance of the physical and naturally built environment, prioritizing sustainable and smart urban planning.',
+        vision: 'To be a nationally recognized Civil Engineering department committed to sustainable infrastructure development and societal growth.',
+        mission: 'To provide strong fundamentals and practical exposure in Civil Engineering, promote research in sustainable construction, and develop professionals with social and environmental responsibility.',
         bannerImage: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200',
         cardImage: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=600',
         programs: [
@@ -236,10 +430,38 @@ export const departmentsData = [
             'Computer Aided Design (CAD) Lab'
         ],
         faculty: [
-            { name: 'Dr. Thomas Moore', designation: 'Professor', research: 'Structural Dynamics', photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300' },
-            { name: 'Prof. Karen Hall', designation: 'Associate Professor', research: 'Environmental Engg', photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300' },
-            { name: 'Dr. Andrew King', designation: 'Assistant Professor', research: 'Transportation', photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300' },
-            { name: 'Prof. George Wright', designation: 'Assistant Professor', research: 'Geotech', photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300' }
+            { 
+                name: 'Dr. Thomas Moore', 
+                designation: 'Professor', 
+                qualification: 'Ph.D. in Structural Engineering', 
+                email: 'thomas.moore@srit.ac.in',
+                research: 'Structural Dynamics', 
+                photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300' 
+            },
+            { 
+                name: 'Prof. Karen Hall', 
+                designation: 'Associate Professor', 
+                qualification: 'M.Tech in Environmental Engineering', 
+                email: 'karen.hall@srit.ac.in',
+                research: 'Environmental Engg', 
+                photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300' 
+            },
+            { 
+                name: 'Dr. Andrew King', 
+                designation: 'Assistant Professor', 
+                qualification: 'Ph.D. in Transportation Engineering', 
+                email: 'andrew.king@srit.ac.in',
+                research: 'Transportation', 
+                photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300' 
+            },
+            { 
+                name: 'Prof. George Wright', 
+                designation: 'Assistant Professor', 
+                qualification: 'M.Tech in Geotechnical Engineering', 
+                email: 'george.wright@srit.ac.in',
+                research: 'Geotech', 
+                photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300' 
+            }
         ],
         achievements: [
             '88% Placement Record with top construction giants',
@@ -273,7 +495,8 @@ export const departmentsData = [
         contact: {
             email: 'civil@srit.ac.in',
             phone: '+91 98765 43213',
-            location: 'CIVIL Block, SRIT Campus'
+            location: 'CIVIL Block, SRIT Campus',
+            mapEmbedUrl: 'https://www.google.com/maps?q=Srinivasa+Ramanujan+Institute+of+Technology&output=embed'
         }
     }
 ];

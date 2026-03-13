@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, ChevronRight, Phone, Mail, MapPin, Users, Award, BookOpen, Monitor, Briefcase, GraduationCap, Quote } from 'lucide-react';
 import { departmentsData } from '../src/data/departmentsData';
 import AnimatedCounter from '../components/AnimatedCounter';
 
+type DepartmentTab = 'home' | 'faculty' | 'academics' | 'labs' | 'projects' | 'gallery' | 'contact';
+
 const DepartmentDetail: React.FC = () => {
     const { id } = useParams<{ id: string }>();
     const [dept, setDept] = useState(departmentsData[0]);
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const tabFromUrl = new URLSearchParams(location.search).get('tab') as DepartmentTab | null;
+    const [activeTab, setActiveTab] = useState<DepartmentTab>('home');
 
     useEffect(() => {
         const foundDept = departmentsData.find(d => d.id === id);
@@ -19,10 +26,24 @@ const DepartmentDetail: React.FC = () => {
         window.scrollTo(0, 0);
     }, [id]);
 
+    useEffect(() => {
+        const allowedTabs: DepartmentTab[] = ['home', 'faculty', 'academics', 'labs', 'projects', 'gallery', 'contact'];
+        if (tabFromUrl && allowedTabs.includes(tabFromUrl)) {
+            setActiveTab(tabFromUrl);
+        } else {
+            setActiveTab('home');
+        }
+    }, [tabFromUrl]);
+
+    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, tabId: DepartmentTab) => {
+        e.preventDefault();
+        navigate({ search: `?tab=${tabId}` });
+    };
+
     return (
         <div className="bg-secondary-50 min-h-screen pb-20">
             {/* 1️⃣ Hero Section */}
-            <section className="relative h-[60vh] md:h-[70vh] w-full flex flex-col justify-end pb-24 overflow-hidden">
+            <section id="overview" className="relative h-[60vh] md:h-[70vh] w-full flex flex-col justify-end pb-24 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-secondary-950/70 mix-blend-multiply z-10" />
                     <img 
@@ -51,10 +72,42 @@ const DepartmentDetail: React.FC = () => {
                         </p>
                     </motion.div>
                 </div>
+                {/* Tabs Navigation (always visible on banner) */}
+                <div className="absolute bottom-0 left-0 right-0 z-30">
+                    <div className="bg-white/95 backdrop-blur border-t border-white/30 shadow-[0_-10px_30px_rgba(0,0,0,0.15)]">
+                        <div className="container mx-auto px-4 md:px-12">
+                            <div className="flex overflow-x-auto gap-2 md:gap-3 py-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-secondary-600">
+                                {[
+                                    { id: 'home' as DepartmentTab, label: 'Home' },
+                                    { id: 'faculty' as DepartmentTab, label: 'Faculty' },
+                                    { id: 'academics' as DepartmentTab, label: 'Academics' },
+                                    { id: 'labs' as DepartmentTab, label: 'Labs' },
+                                    { id: 'projects' as DepartmentTab, label: 'Projects' },
+                                    { id: 'gallery' as DepartmentTab, label: 'Gallery' },
+                                    { id: 'contact' as DepartmentTab, label: 'Contact' }
+                                ].map(link => (
+                                    <a
+                                        key={link.id}
+                                        href={`?tab=${link.id}`}
+                                        onClick={(e) => handleNavClick(e, link.id)}
+                                        className={`px-4 py-2 rounded-full whitespace-nowrap border transition-colors ${
+                                            activeTab === link.id
+                                                ? 'border-primary-500 text-primary-500 bg-white'
+                                                : 'border-transparent hover:border-primary-500 hover:text-primary-500 bg-secondary-50/50 hover:bg-white'
+                                        }`}
+                                    >
+                                        {link.label}
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <div className="container mx-auto px-4 md:px-12 -mt-10 relative z-30">
-                {/* 2️⃣ Quick Stats Bar */}
+                {/* 2️⃣ Quick Stats Bar – only on Home & Academics tabs */}
+                {(activeTab === 'home' || activeTab === 'academics') && (
                 <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 flex flex-wrap justify-between items-center gap-8 mb-24">
                     <div className="flex items-center gap-6">
                         <div className={`w-16 h-16 rounded-xl flex items-center justify-center text-white shadow-lg ${dept.theme}`}>
@@ -93,19 +146,38 @@ const DepartmentDetail: React.FC = () => {
                         </div>
                     </div>
                 </div>
+                )}
 
+                {/* Home & Academics content */}
+                {(activeTab === 'home' || activeTab === 'academics') && (
                 <div className="flex flex-col lg:flex-row gap-16 mb-24">
                     <div className="lg:w-2/3 space-y-16">
-                        {/* 3️⃣ About & Programs */}
+                        {/* 3️⃣ About, Vision & Academics */}
                         <section>
                             <div className="flex items-center gap-4 mb-6">
                                 <span className={`h-px w-12 ${dept.theme}`}></span>
                                 <span className={`font-bold uppercase tracking-widest text-xs text-${dept.theme.replace('bg-', '')}`}>About {dept.code}</span>
                             </div>
-                            <h2 className="text-4xl font-heading font-black uppercase text-secondary-900 mb-8">Department Overview</h2>
-                            <p className="text-lg text-secondary-600 leading-relaxed font-light mb-12">
+                            <h2 className="text-4xl font-heading font-black uppercase text-secondary-900 mb-6">Department Overview</h2>
+                            <p className="text-lg text-secondary-600 leading-relaxed font-light mb-8">
                                 {dept.longDesc}
                             </p>
+                            
+                            {/* Vision & Mission */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+                                    <h3 className="text-xl font-bold text-secondary-900 mb-3">Vision</h3>
+                                    <p className="text-secondary-600 text-sm leading-relaxed">
+                                        {dept.vision}
+                                    </p>
+                                </div>
+                                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+                                    <h3 className="text-xl font-bold text-secondary-900 mb-3">Mission</h3>
+                                    <p className="text-secondary-600 text-sm leading-relaxed">
+                                        {dept.mission}
+                                    </p>
+                                </div>
+                            </div>
                             
                             <h3 className="text-2xl font-bold text-secondary-900 mb-6 flex items-center gap-3">
                                 <BookOpen className={`text-${dept.theme.replace('bg-', '')}`} /> Programs Offered
@@ -147,7 +219,7 @@ const DepartmentDetail: React.FC = () => {
                     </div>
 
                     <div className="lg:w-1/3 space-y-8">
-                        {/* Right Sidebar */}
+                        {/* Right Sidebar – Laboratories & Facilities */}
                         <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 sticky top-32">
                             <h3 className="text-2xl font-black text-secondary-900 mb-8 border-b border-gray-100 pb-4">
                                 Excellent Facilities
@@ -181,8 +253,10 @@ const DepartmentDetail: React.FC = () => {
                         </div>
                     </div>
                 </div>
+                )}
 
                 {/* 5️⃣ Faculty Grid */}
+                {activeTab === 'faculty' && (
                 <section className="mb-24">
                     <div className="text-center mb-16">
                         <span className={`font-bold uppercase tracking-widest text-xs mb-4 block text-${dept.theme.replace('bg-', '')}`}>Academic Leaders</span>
@@ -202,8 +276,18 @@ const DepartmentDetail: React.FC = () => {
                                 </div>
                                 <div className="p-6 relative bg-white border-t-4 border-transparent group-hover:border-current" style={{ borderTopColor: dept.theme.includes('blue') ? '#3b82f6' : dept.theme.includes('orange') ? '#f97316' : dept.theme.includes('emerald') ? '#10b981' : '#64748b' }}>
                                     <h4 className="text-xl font-bold text-secondary-900 mb-1">{member.name}</h4>
-                                    <p className={`text-xs font-bold uppercase tracking-widest mb-4 text-${dept.theme.replace('bg-', '')}`}>{member.designation}</p>
-                                    <p className="text-secondary-500 text-sm">
+                                    <p className={`text-xs font-bold uppercase tracking-widest mb-2 text-${dept.theme.replace('bg-', '')}`}>{member.designation}</p>
+                                    {member.qualification && (
+                                        <p className="text-secondary-600 text-xs mb-2">
+                                            <strong className="text-secondary-800">Qualification:</strong> {member.qualification}
+                                        </p>
+                                    )}
+                                    {member.email && (
+                                        <p className="text-secondary-600 text-xs mb-2 break-all">
+                                            <strong className="text-secondary-800">Email:</strong> {member.email}
+                                        </p>
+                                    )}
+                                    <p className="text-secondary-500 text-xs">
                                         <strong className="text-secondary-700">Research:</strong> {member.research}
                                     </p>
                                 </div>
@@ -211,8 +295,10 @@ const DepartmentDetail: React.FC = () => {
                         ))}
                     </div>
                 </section>
+                )}
 
                 {/* 6️⃣ Student Projects */}
+                {activeTab === 'projects' && (
                 <section className="mb-24 bg-secondary-950 rounded-3xl p-8 md:p-16 relative overflow-hidden">
                     <div className={`absolute top-0 right-0 w-[500px] h-[500px] rounded-full blur-[100px] opacity-20 ${dept.theme}`}></div>
                     
@@ -242,8 +328,10 @@ const DepartmentDetail: React.FC = () => {
                         ))}
                     </div>
                 </section>
+                )}
 
-                {/* 7️⃣ Achievements & Placements */}
+                {/* 7️⃣ Achievements & Contact */}
+                {activeTab === 'contact' && (
                 <section className="mb-24 flex flex-col lg:flex-row gap-8">
                     <div className="lg:w-1/2 bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
                         <h3 className="text-3xl font-heading font-black uppercase text-secondary-900 mb-8 border-b border-gray-100 pb-4">
@@ -283,11 +371,25 @@ const DepartmentDetail: React.FC = () => {
                                     <span>{dept.contact.location}</span>
                                 </div>
                             </div>
+
+                            {dept.contact.mapEmbedUrl && (
+                                <div className="mt-8 rounded-2xl overflow-hidden bg-black/20 border border-white/20">
+                                    <iframe
+                                        src={dept.contact.mapEmbedUrl}
+                                        title={`${dept.name} Location Map`}
+                                        loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade"
+                                        className="w-full h-64 md:h-72 border-0"
+                                    ></iframe>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </section>
+                )}
 
                 {/* 8️⃣ Gallery */}
+                {activeTab === 'gallery' && (
                 <section>
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-5xl font-heading font-black uppercase tracking-tight text-secondary-900">
@@ -302,6 +404,7 @@ const DepartmentDetail: React.FC = () => {
                         ))}
                     </div>
                 </section>
+                )}
             </div>
         </div>
     );
