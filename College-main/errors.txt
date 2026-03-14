@@ -1,0 +1,140 @@
+﻿pages/Department.tsx(44,61): error TS1005: '</' expected.
+pages/Department.tsx(45,1): error TS1185: Merge conflict marker encountered.
+pages/Department.tsx(64,1): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(64,2): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(64,3): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(64,4): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(64,5): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(64,6): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(64,7): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(129,23): error TS1005: '</' expected.
+pages/Department.tsx(131,1): error TS1185: Merge conflict marker encountered.
+pages/Department.tsx(141,1): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(141,2): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(141,3): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(141,4): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(141,5): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(141,6): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(141,7): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(178,23): error TS1005: '</' expected.
+pages/Department.tsx(179,18): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/Department.tsx(181,1): error TS1185: Merge conflict marker encountered.
+pages/Department.tsx(298,1): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(298,2): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(298,3): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(298,4): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(298,5): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(298,6): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(298,7): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(301,23): error TS1005: '</' expected.
+pages/Department.tsx(302,18): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/Department.tsx(304,1): error TS1185: Merge conflict marker encountered.
+pages/Department.tsx(319,1): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(319,2): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(319,3): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(319,4): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(319,5): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(319,6): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(319,7): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(388,39): error TS1005: '</' expected.
+pages/Department.tsx(389,1): error TS1185: Merge conflict marker encountered.
+pages/Department.tsx(408,25): error TS1128: Declaration or statement expected.
+pages/Department.tsx(409,21): error TS1109: Expression expected.
+pages/Department.tsx(409,22): error TS1128: Declaration or statement expected.
+pages/Department.tsx(410,17): error TS1128: Declaration or statement expected.
+pages/Department.tsx(413,26): error TS1005: ';' expected.
+pages/Department.tsx(413,41): error TS1005: ';' expected.
+pages/Department.tsx(414,21): error TS2657: JSX expressions must have one parent element.
+pages/Department.tsx(471,17): error TS1128: Declaration or statement expected.
+pages/Department.tsx(474,26): error TS1005: ';' expected.
+pages/Department.tsx(474,39): error TS1005: ';' expected.
+pages/Department.tsx(475,21): error TS2657: JSX expressions must have one parent element.
+pages/Department.tsx(493,1): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(493,2): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(493,3): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(493,4): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(493,5): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(493,6): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(493,7): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(533,17): error TS1128: Declaration or statement expected.
+pages/Department.tsx(534,17): error TS1109: Expression expected.
+pages/Department.tsx(534,18): error TS1128: Declaration or statement expected.
+pages/Department.tsx(536,1): error TS1185: Merge conflict marker encountered.
+pages/Department.tsx(539,1): error TS1185: Merge conflict marker encountered.
+pages/Department.tsx(683,1): error TS1185: Merge conflict marker encountered.
+pages/Department.tsx(716,1): error TS1185: Merge conflict marker encountered.
+pages/Department.tsx(729,1): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(729,2): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(729,3): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(729,4): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(729,5): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(729,6): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(729,7): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(781,27): error TS1005: '</' expected.
+pages/Department.tsx(782,18): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/Department.tsx(784,1): error TS1185: Merge conflict marker encountered.
+pages/Department.tsx(794,1): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(794,2): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(794,3): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(794,4): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(794,5): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(794,6): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(794,7): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Department.tsx(814,18): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+pages/Department.tsx(816,11): error TS17002: Expected corresponding JSX closing tag for 'section'.
+pages/Department.tsx(820,33): error TS1005: '}' expected.
+pages/Home.tsx(199,1): error TS1185: Merge conflict marker encountered.
+pages/Home.tsx(207,1): error TS1185: Merge conflict marker encountered.
+pages/Home.tsx(215,1): error TS1185: Merge conflict marker encountered.
+pages/Home.tsx(259,1): error TS1185: Merge conflict marker encountered.
+pages/Home.tsx(268,1): error TS1185: Merge conflict marker encountered.
+pages/Home.tsx(278,1): error TS1185: Merge conflict marker encountered.
+pages/Home.tsx(285,26): error TS1005: '</' expected.
+pages/Home.tsx(286,1): error TS1185: Merge conflict marker encountered.
+pages/Home.tsx(290,21): error TS17002: Expected corresponding JSX closing tag for 'p'.
+pages/Home.tsx(311,1): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Home.tsx(311,2): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Home.tsx(311,3): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Home.tsx(311,4): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Home.tsx(311,5): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Home.tsx(311,6): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Home.tsx(311,7): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+pages/Home.tsx(314,16): error TS1128: Declaration or statement expected.
+pages/Home.tsx(315,13): error TS1109: Expression expected.
+pages/Home.tsx(316,10): error TS1109: Expression expected.
+pages/Home.tsx(319,19): error TS1005: ';' expected.
+pages/Home.tsx(319,34): error TS1005: ';' expected.
+pages/Home.tsx(369,1): error TS1185: Merge conflict marker encountered.
+pages/Home.tsx(375,1): error TS1185: Merge conflict marker encountered.
+pages/Home.tsx(380,1): error TS1185: Merge conflict marker encountered.
+pages/Home.tsx(414,10): error TS1128: Declaration or statement expected.
+pages/Home.tsx(417,19): error TS1005: ';' expected.
+pages/Home.tsx(417,43): error TS1005: ';' expected.
+pages/Home.tsx(478,10): error TS1128: Declaration or statement expected.
+pages/Home.tsx(481,19): error TS1005: ';' expected.
+pages/Home.tsx(481,36): error TS1005: ';' expected.
+pages/Home.tsx(522,10): error TS1128: Declaration or statement expected.
+pages/Home.tsx(525,19): error TS1005: ';' expected.
+pages/Home.tsx(586,10): error TS1128: Declaration or statement expected.
+pages/Home.tsx(589,19): error TS1005: ';' expected.
+pages/Home.tsx(637,10): error TS1128: Declaration or statement expected.
+pages/Home.tsx(640,19): error TS1005: ';' expected.
+pages/Home.tsx(640,36): error TS1005: ';' expected.
+pages/Home.tsx(729,10): error TS1128: Declaration or statement expected.
+pages/Home.tsx(732,19): error TS1005: ';' expected.
+pages/Home.tsx(770,10): error TS1128: Declaration or statement expected.
+pages/Home.tsx(772,7): error TS1109: Expression expected.
+pages/Home.tsx(773,4): error TS1109: Expression expected.
+pages/Home.tsx(774,1): error TS1128: Declaration or statement expected.
+src/data/departmentsData.ts(198,1): error TS1185: Merge conflict marker encountered.
+src/data/departmentsData.ts(202,1): error TS1185: Merge conflict marker encountered.
+src/data/departmentsData.ts(275,1): error TS1185: Merge conflict marker encountered.
+src/data/departmentsData.ts(373,1): error TS1185: Merge conflict marker encountered.
+src/data/departmentsData.ts(377,1): error TS1185: Merge conflict marker encountered.
+src/data/departmentsData.ts(440,1): error TS1185: Merge conflict marker encountered.
+src/data/departmentsData.ts(538,1): error TS1185: Merge conflict marker encountered.
+src/data/departmentsData.ts(542,1): error TS1185: Merge conflict marker encountered.
+src/data/departmentsData.ts(605,1): error TS1185: Merge conflict marker encountered.
+src/data/departmentsData.ts(703,1): error TS1185: Merge conflict marker encountered.
+src/data/departmentsData.ts(707,1): error TS1185: Merge conflict marker encountered.
+src/data/departmentsData.ts(770,1): error TS1185: Merge conflict marker encountered.
