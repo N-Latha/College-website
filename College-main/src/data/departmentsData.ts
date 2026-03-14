@@ -195,12 +195,8 @@ export const departmentsData = [
         contact: {
             email: 'cse@srit.ac.in',
             phone: '+91 98765 43210',
-<<<<<<< HEAD
             location: 'CSE Block, SRIT Campus',
             mapEmbedUrl: 'https://www.google.com/maps?q=Srinivasa+Ramanujan+Institute+of+Technology&output=embed'
-        }
-=======
-            location: 'CSE Block, SRIT Campus'
         },
         // 1. About the Department
         aboutDepartment: {
@@ -272,7 +268,6 @@ export const departmentsData = [
             { name: 'Ananya Gupta', role: 'ML Engineer', company: 'Infosys', photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300', quote: 'SRIT\'s research culture and IEEE chapter sparked my interest in machine learning early on.' }
         ],
         alumniNetwork: 'Our alumni network spans 5000+ professionals. Connect via LinkedIn group "SRIT CSE Alumni" and annual alumni meet.'
->>>>>>> 06838854b3c78e120c06f5b608ecb80172f3f0d2
     },
     {
         id: 'ece',
@@ -370,12 +365,8 @@ export const departmentsData = [
         contact: {
             email: 'ece@srit.ac.in',
             phone: '+91 98765 43211',
-<<<<<<< HEAD
             location: 'ECE Block, SRIT Campus',
             mapEmbedUrl: 'https://www.google.com/maps?q=Srinivasa+Ramanujan+Institute+of+Technology&output=embed'
-        }
-=======
-            location: 'ECE Block, SRIT Campus'
         },
         aboutDepartment: {
             history: 'The ECE department was established in 2008 to offer strong foundations in electronics, communications, and embedded systems. We have since built state-of-the-art labs and industry partnerships.',
@@ -437,7 +428,6 @@ export const departmentsData = [
             { title: 'Industrial Visit', date: 'Nov 2025' }
         ],
         alumniNetwork: 'SRIT ECE Alumni network – connect via annual meet and LinkedIn.'
->>>>>>> 06838854b3c78e120c06f5b608ecb80172f3f0d2
     },
     {
         id: 'mech',
@@ -535,12 +525,8 @@ export const departmentsData = [
         contact: {
             email: 'mech@srit.ac.in',
             phone: '+91 98765 43212',
-<<<<<<< HEAD
             location: 'MECH Block, SRIT Campus',
             mapEmbedUrl: 'https://www.google.com/maps?q=Srinivasa+Ramanujan+Institute+of+Technology&output=embed'
-        }
-=======
-            location: 'MECH Block, SRIT Campus'
         },
         aboutDepartment: {
             history: 'Mechanical Engineering at SRIT started in 2008 with a focus on thermal, manufacturing, and design. We have evolved with robotics, automation, and industry 4.0 labs.',
@@ -602,7 +588,6 @@ export const departmentsData = [
             { title: 'Industry Visit', date: 'Nov 2025' }
         ],
         alumniNetwork: 'SRIT Mechanical Alumni – annual meet and industry mentorship program.'
->>>>>>> 06838854b3c78e120c06f5b608ecb80172f3f0d2
     },
     {
         id: 'civil',
@@ -700,12 +685,8 @@ export const departmentsData = [
         contact: {
             email: 'civil@srit.ac.in',
             phone: '+91 98765 43213',
-<<<<<<< HEAD
             location: 'CIVIL Block, SRIT Campus',
             mapEmbedUrl: 'https://www.google.com/maps?q=Srinivasa+Ramanujan+Institute+of+Technology&output=embed'
-        }
-=======
-            location: 'CIVIL Block, SRIT Campus'
         },
         aboutDepartment: {
             history: 'The Civil Engineering department was established in 2008 to train engineers for infrastructure, construction, and sustainable development. We have strong ties with PWD and construction firms.',
@@ -767,6 +748,5 @@ export const departmentsData = [
             { title: 'Site Visit', date: 'Nov 2025' }
         ],
         alumniNetwork: 'SRIT Civil Alumni network – reconnect via annual meet and BAI events.'
->>>>>>> 06838854b3c78e120c06f5b608ecb80172f3f0d2
     }
 ];

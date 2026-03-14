@@ -196,7 +196,6 @@ const Home: React.FC = () => {
                      initial={{ opacity: 0, y: 30 }}
                      whileInView={{ opacity: 1, y: 0 }}
                      viewport={{ once: true }}
-<<<<<<< HEAD
                      className="bg-secondary-50 p-10 rounded-3xl text-center shadow-lg hover:shadow-2xl transition-all duration-300 group flex flex-col h-full"
                   >
                      <div className="w-56 h-64 mx-auto rounded-3xl overflow-hidden mb-8 border-4 border-white shadow-md relative bg-secondary-100">
@@ -204,15 +203,6 @@ const Home: React.FC = () => {
                           src="/chairperson.png" 
                           alt="Jonnalagadda Padmavathy, Chairperson SRIT" 
                            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
-=======
-                     className="bg-white p-8 rounded-3xl text-center shadow-[0_4px_24px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_-12px_rgba(0,0,0,0.12)] border border-gray-100/80 transition-all duration-300 group"
-                  >
-                     <div className="w-48 h-48 mx-auto rounded-2xl overflow-hidden mb-8 border-4 border-white shadow-lg relative">
-                        <img 
-                           src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400" 
-                           alt="Chairperson" 
-                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
->>>>>>> 06838854b3c78e120c06f5b608ecb80172f3f0d2
                         />
                      </div>
                      <span className="text-primary-500 font-bold uppercase tracking-widest text-xs block mb-2">Chairperson</span>
@@ -256,7 +246,6 @@ const Home: React.FC = () => {
                      initial={{ opacity: 0, y: 30 }}
                      whileInView={{ opacity: 1, y: 0 }}
                      viewport={{ once: true }}
-<<<<<<< HEAD
                      transition={{ delay: 0.2 }}
                      className="bg-secondary-50 p-10 rounded-3xl text-center shadow-lg hover:shadow-2xl transition-all duration-300 group flex flex-col h-full"
                   >
@@ -265,17 +254,6 @@ const Home: React.FC = () => {
                            src="/principal.png" 
                            alt="Dr. G. Balakrishna, Principal SRIT" 
                            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
-=======
-                     transition={{ delay: 0.1 }}
-                     className="bg-white p-8 rounded-3xl text-center shadow-[0_4px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_24px_48px_-12px_rgba(0,0,0,0.15)] hover:-translate-y-1 transition-all duration-300 group relative md:-mt-4 border border-gray-100/80 z-10"
-                  >
-                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-1.5 bg-primary-500 rounded-b-lg"></div>
-                     <div className="w-48 h-48 mx-auto rounded-2xl overflow-hidden mb-8 border-4 border-primary-100 shadow-lg mt-4 relative">
-                        <img 
-                           src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400" 
-                           alt="Principal" 
-                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
->>>>>>> 06838854b3c78e120c06f5b608ecb80172f3f0d2
                         />
                      </div>
                      <span className="text-primary-500 font-bold uppercase tracking-widest text-xs block mb-2">Principal</span>
@@ -283,32 +261,8 @@ const Home: React.FC = () => {
                      <p className="text-secondary-500 text-xs font-semibold uppercase tracking-wider mb-3">
                         Srinivasa Ramanujan Institute of Technology
                      </p>
-<<<<<<< HEAD
                      <p className="text-secondary-600 text-sm leading-relaxed px-4 mt-auto">
                         "Our goal is to blend strong fundamentals with real-world exposure, so every SRIT graduate leads with knowledge, humility, and responsibility."
-=======
-                  </motion.div>
-
-                  {/* Vice Principal */}
-                  <motion.div 
-                     initial={{ opacity: 0, y: 30 }}
-                     whileInView={{ opacity: 1, y: 0 }}
-                     viewport={{ once: true }}
-                     transition={{ delay: 0.2 }}
-                     className="bg-white p-8 rounded-3xl text-center shadow-[0_4px_24px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_40px_-12px_rgba(0,0,0,0.12)] border border-gray-100/80 transition-all duration-300 group"
-                  >
-                     <div className="w-48 h-48 mx-auto rounded-2xl overflow-hidden mb-8 border-4 border-white shadow-lg relative">
-                        <img 
-                           src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400" 
-                           alt="Vice Principal" 
-                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                     </div>
-                     <span className="text-primary-500 font-bold uppercase tracking-widest text-xs block mb-2">Vice Principal</span>
-                     <h3 className="text-2xl font-black text-secondary-900 mb-4">Prof. Michael Chen</h3>
-                     <p className="text-secondary-600 text-sm leading-relaxed px-4">
-                        "Focusing on holistic student development, ensuring our graduates are not just industry-ready, but life-ready."
->>>>>>> 06838854b3c78e120c06f5b608ecb80172f3f0d2
                      </p>
                   </motion.div>
                </div>
@@ -366,18 +320,11 @@ const Home: React.FC = () => {
 
                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                   {[
-<<<<<<< HEAD
                      { id: 'cse', code: 'CSE', name: 'Computer Science', desc: 'Core Computer Science program with focus on systems, programming and software engineering.', img: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600', color: 'bg-blue-500' },
                      { id: 'cse-aiml', code: 'CSE (AI&ML)', name: 'CSE (AI & ML, Data Science)', desc: 'Specialized CSE program in Artificial Intelligence, Machine Learning and Data Science.', img: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=600', color: 'bg-indigo-500' },
                      { id: 'ece', code: 'ECE', name: 'Electronics', desc: 'VLSI, Communications, and Embedded Systems fostering hardware innovation.', img: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600', color: 'bg-orange-500' },
                      { id: 'mech', code: 'MECH', name: 'Mechanical', desc: 'Advanced Robotics, Thermal Engineering, and Automotive Design.', img: 'https://images.unsplash.com/photo-1565063073994-0cf7fcd025ac?q=80&w=600', color: 'bg-slate-500' },
                      { id: 'civil', code: 'CIVIL', name: 'Civil Engineering', desc: 'Sustainable Infrastructure, Smart Cities, and Structural Engineering.', img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=600', color: 'bg-emerald-500' }
-=======
-                     { id: 'cse', code: 'CSE', name: 'Computer Science', desc: 'AI, Data Science, and Software Development programs focusing on tomorrow\'s technology.', img: 'https://images.unsplash.com/photo-1526378722484-cc5c51074c23?q=80&w=900', color: 'bg-blue-500' },
-                     { id: 'ece', code: 'ECE', name: 'Electronics', desc: 'VLSI, Communications, and Embedded Systems fostering hardware innovation.', img: 'https://images.unsplash.com/photo-1581090700227-1e37b190418e?q=80&w=900', color: 'bg-orange-500' },
-                     { id: 'mech', code: 'MECH', name: 'Mechanical', desc: 'Advanced Robotics, Thermal Engineering, and Automotive Design.', img: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=900', color: 'bg-slate-500' },
-                     { id: 'civil', code: 'CIVIL', name: 'Civil Engineering', desc: 'Sustainable Infrastructure, Smart Cities, and Structural Engineering.', img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=900', color: 'bg-emerald-500' }
->>>>>>> 06838854b3c78e120c06f5b608ecb80172f3f0d2
                   ].map((dept, i) => (
                      <motion.div 
                         key={i}
